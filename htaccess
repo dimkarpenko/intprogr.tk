@@ -1,8 +1,3 @@
-
-# HTID:16642825: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
-php_value display_errors 1
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16642825:
-
 #Custom error pages
 ErrorDocument 403 /errors/403.html
 ErrorDocument 404 /errors/404.html
@@ -44,13 +39,3 @@ Options All -Indexes
 #Redirects
 Redirect 301 /errors/503 http://www.intprogr.tk
 Redirect 301 /index http://www.intprogr.tk
-
-#Технические работы
-#<IfModule mod_rewrite.c>
-#RewriteCond %{REMOTE_ADDR} !^90\.151\.92\.120
-#RewriteCond %{DOCUMENT_ROOT}/errors/503.php -f
-#RewriteCond %{SCRIPT_FILENAME} !/errors/503.php
-#RewriteRule ^.*$ /errors/503.php [R=503,L]
-#ErrorDocument 503 /errors/503.php
-#Header Set Cache-Control "max-age=0, no-store"
-#</IfModule>
