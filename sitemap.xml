@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://intprogr.tk/</loc>
+	<lastmod>2021-03-29T16:04:08+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/languages</loc>
+	<lastmod>2021-03-29T16:04:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/advice</loc>
+	<lastmod>2021-03-29T16:04:12+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/cmd</loc>
+	<lastmod>2021-03-29T16:04:12+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/python</loc>
+	<lastmod>2021-03-29T16:04:15+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/scratch</loc>
+	<lastmod>2021-03-29T16:04:13+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/HTML</loc>
+	<lastmod>2021-03-29T16:04:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/CSS</loc>
+	<lastmod>2021-03-29T16:04:15+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/JS</loc>
+	<lastmod>2021-03-29T16:04:15+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/search</loc>
+	<lastmod>2021-03-29T16:04:16+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/about</loc>
+	<lastmod>2021-03-29T16:04:16+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://intprogr.tk/examples/js.php</loc>
+	<lastmod>2021-03-29T16:04:16+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

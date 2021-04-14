@@ -1,0 +1,56 @@
+
+# HTID:16642825: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16642825:
+
+#Custom error pages
+ErrorDocument 403 /errors/403.html
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 https://www.intprogr.tk/errors/500
+
+RewriteEngine on
+
+<Files books.php>
+ order allow,deny
+ deny from all
+ </Files>
+
+#Redirect to https and www
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+#Delete .php and .html extensions in url
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+#Delete /? symbol after redirect to homepage
+RewriteCond %{THE_REQUEST} ^[^\s]+\s+[^?]*?\?
+RewriteCond %{QUERY_STRING} =""
+RewriteRule .? %{REQUEST_URI}? [R=301,L]
+
+#Stop viewing indexes of folders
+Options All -Indexes
+
+#Redirects
+Redirect 301 /errors/503 http://www.intprogr.tk
+Redirect 301 /index http://www.intprogr.tk
+
+#Технические работы
+#<IfModule mod_rewrite.c>
+#RewriteCond %{REMOTE_ADDR} !^90\.151\.92\.120
+#RewriteCond %{DOCUMENT_ROOT}/errors/503.php -f
+#RewriteCond %{SCRIPT_FILENAME} !/errors/503.php
+#RewriteRule ^.*$ /errors/503.php [R=503,L]
+#ErrorDocument 503 /errors/503.php
+#Header Set Cache-Control "max-age=0, no-store"
+#</IfModule>
