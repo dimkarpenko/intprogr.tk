@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>503 Service Unavailable</title>
-	<link rel="shortcut icon" href="https://intprogramming.000webhostapp.com/images/file-code-icon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/images/file-code-icon.png" type="image/x-icon">
 </head>
 <body>
 	<center>
